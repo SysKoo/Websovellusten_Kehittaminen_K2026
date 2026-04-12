@@ -1,0 +1,141 @@
+/* beginning of WS02 contents */
+
+body {
+    background-color: #f6f6f4;
+}
+
+h1 {
+    font-size:2em;
+}
+
+h2, h3 {
+    color: #423a52;
+}
+
+p {
+    color: #41337A;
+}
+
+.hobbies { 
+    padding: 10px;
+    margin: 10px;
+    background-color: #dacfde;
+    border: 1px solid #41337A;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #41337A;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ad9ecb;
+}
+
+td {
+    background-color: #dacfde;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 5px;
+    border: 1px solid #41337A;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #8c70c1;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #7e66aa;
+}
+
+/* Beginning of WS03 contents */
+
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
+
+.animation-box {
+    width: 70px;
+    height: 50px;
+    background-color: #ad9ecb;
+    position: relative;
+    animation: move 2s infinite alternate;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: #dacfde;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: #ad9ecb;
+}
+
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 1s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+.quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.quote::before {
+    content: "\201C";
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #ad9ecb;
+}
